@@ -13,5 +13,10 @@ Examples:
 - repeat_it("cwAt") -> "C-Ww-Aaa-Tttt"
 """
 def repeat_it(input_str):
-    # Your code here
+    a = [i.lower() for i in input_str]
+    b = [i * (a.index(i) + 1) for i in a]
+    c = [i[0].upper()+i[1:] for i in b]
+    fin = "-".join(c)
+    return fin
 
+print(repeat_it("cwAt"))

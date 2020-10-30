@@ -16,6 +16,11 @@ Notes:
 the maximum number is first.
 """
 def max_and_min(input_str):
-    # Your code here
+    a = input_str.split(" ")
+    b = [int(i) for i in a]
+    min_max = [str(max(b)), str(min(b))]
+    c = " ".join(min_max)
+    return type(c), c
 
 
+print(max_and_min("1 2 -3 4 5"))

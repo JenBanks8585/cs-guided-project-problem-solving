@@ -16,5 +16,19 @@ Notes:
 
 
 def add_indexes(numbers):
-    # Your code here
+    l = []
+    for idx, val in enumerate(numbers):
+        a = val + idx 
+        l.append(a)
+    return l
+
+print(add_indexes([5, 4, 3, 2, 1]))
+
+
+
+def add_indexes2(numbers):    
+    l = [val + idx for idx, val in enumerate(numbers)]
+    return l
+
+print(add_indexes2([5, 4, 3, 2, 1]))
 

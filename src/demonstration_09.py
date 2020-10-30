@@ -14,6 +14,14 @@ Examples:
 - get_middle("A") -> "A"
 """
 def get_middle(input_str):
-    # Your code here
+    leng= len(input_str)
+    if leng % 2 == 0:
+        idx = int(leng/2)
+        return input_str[idx-1:idx+1]
+    else:
+        idx = int(leng//2)
+        return input_str[idx]
 
+
+print(get_middle("matoter"))
 

@@ -13,8 +13,27 @@ Notes:
 - Return "invalid" if n exceeds the length of the list.
 - Return an empty list if n == 0.
 """
+# plan
+'''
 
+'''
 
 def last(a, n):
-    # Your code here
+    # Check if n > len(a)
+    if n > len(a):
+        # return invalid
+        return "invalid"
+    
+    # Check if it's an empty list:
+    if n == 0:
+        #return n == 0
+        return []
 
+    # otherwise:
+    else:
+        # return list from n to last
+        return a[len(a)-n:]
+
+print(last([4, 3, 9, 9, 7, 6], 3))
+b = [1, 2, 3, 4, 5]
+print (b[3:9])

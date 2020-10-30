@@ -7,8 +7,8 @@ corresponding emoticons.
 
 word -> emoticon
 ---
-smile -> :D
-grin -> :)
+smile -> :)
+grin -> :D
 sad -> :(
 mad	-> :P
 
@@ -22,7 +22,16 @@ Notes:
 - Try to solve this without using conditional statements like if/else.
 """
 
+m = {'smile' : ':)',
+'grin':':D',
+'sad' :':(',
+'mad':':P'}
+def emotify(txt):    
+    for k, v in m.items():
+        txt = txt.replace(k,v)
+    return txt
+    
 
-def emotify(txt):
-    # Your code here
+    
 
+print(emotify("Make me mad"))

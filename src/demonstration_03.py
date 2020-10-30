@@ -12,8 +12,16 @@ Examples:
 Notes:
 - Bonus: Try to complete this challenge in one line!
 """
-
+import functools
 
 def multiply_nums(nums):
+    a= nums.split(",")
+    b = [int(i) for i in a]
+    res = 1    
+    for x in b:
+        res *=x
+    return res
+
+print(multiply_nums("54, 75, 453"))
     # Your code here
 
